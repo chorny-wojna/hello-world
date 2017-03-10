@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <time.h>
-//coment
+
 int main()
 {
 	puts("Enter your age in this year");
@@ -9,7 +9,7 @@ int main()
 	scanf("%d", &age);
 
 	time_t rawtime;
-	struct tm * timeinfo;
+	struct tm * timeinfo; //timeinfo struct
 
 	time(&rawtime);
 	timeinfo = localtime(&rawtime);
